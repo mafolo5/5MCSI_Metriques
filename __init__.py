@@ -8,8 +8,12 @@ import sqlite3
 app = Flask(__name__) #Comm2                                                                                                                 
                                                                                                                                        
 @app.route('/contact/")
-def mapremiereAPI():
+def MApremiereAPI():
     return "<h2>Ma page de contact</h2>"
+
+@app.route('/')
+def hello_word():
+  return render_template('hello.html') #(COMMENTAIRE)
   
 if __name__ == "__main__":
   app.run(debug=True)
