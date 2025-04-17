@@ -5,7 +5,11 @@ from datetime import datetime
 from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
-app = Flask(__name__) #Comm2                                                                                                                  
+app = Flask(__name__) #Comm2
+
+@app.route("/rapport/")
+def mongraphique():
+    return render_template("graphique.html")
                                                                                                                                        
 @app.route("/contact/")
 def MApremiereAPI():
