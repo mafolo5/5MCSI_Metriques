@@ -6,6 +6,10 @@ from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
 app = Flask(__name__) #Comm2
+
+@app.route("/rapport/")
+def mongraphique():
+  return render_template("histogramme.htlm")
                                                                                                                                        
 @app.route("/contact/")
 def MApremiereAPI():
