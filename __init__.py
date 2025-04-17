@@ -9,7 +9,7 @@ app = Flask(__name__) #Comm2
 
 @app.route("/rapport/")
 def mongraphique():
-  return render_template("histogramme.htlm")
+  return render_template("histogramme.html")
                                                                                                                                        
 @app.route("/contact/")
 def MApremiereAPI():
@@ -17,7 +17,7 @@ def MApremiereAPI():
 
 @app.route("/")
 def hello_world():
-    return render_template("hello.htlm")
+    return render_template("hello.html")
 @app.route('/tawarano/')
 def meteo():
   response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
