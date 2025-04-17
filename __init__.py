@@ -8,7 +8,7 @@ import sqlite3
 app = Flask(__name__) #Comm2                                                                                                                 
                                                                                                                                        
 @app.route('/contact/")
-def MAPremiereAPI():
+def mAPremiereAPI():
     return "<h2>Ma page de contact</h2>"
   
 if __name__ == "__main__":
